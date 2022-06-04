@@ -23,8 +23,8 @@ window.onload = () => {
     playButton.addEventListener('click', function() {
 
         // check if context is in suspended state (autoplay policy)
-        if (audioContext.state === 'suspended') {
-            audioContext.resume();
+        if (ctx.state === 'suspended') {
+            ctx.resume();
         }
 
         // play or pause track depending on state
